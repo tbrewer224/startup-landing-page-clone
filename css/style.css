@@ -12,23 +12,36 @@ body {
     font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #838994;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.03rem;
 
 }
 
 h1 {
-	font-size: 3.5em;
+	font-size: 3.5rem;
 	font-weight: 300;
-	line-height: 0.2em;
+	line-height: 0.2rem;
 }
-h3 {
-	font-size: 1.3em;
+
+h2 {
+	color: #000;
+	font-size: 2rem;
 	font-weight: 100;
-	line-height: 0.2em;
+	line-height: 0.2rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.3rem;
+	font-weight: 100;
+	line-height: 0.2rem;
 }
 
 div {
     border: 1px solid Chocolate;
+}
+
+a {
+	text-decoration: none;
 }
 
 .content {
@@ -36,29 +49,12 @@ div {
 	width: 970px;
 }
 
-.big-button {
-    text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 16px 26px;
-    line-height: 1.33;
-    width: 7.8em;
-    background-color: #FF9900;
-    font-size: 1.3em;
-    color: #fff;
-    display: block;
-    margin: 0 auto;
-    margin-top: 2em;
-    cursor: pointer;
-}
-
-.big-button:hover {
-	background-color: #E68A00;
-}
-
 /*Navigation Styles*/
 .top-navigation {
 	background: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
 }
 
 .top-navigation .content {
@@ -69,27 +65,29 @@ div {
 
 .top-navigation .links {
 	float: right;
-	padding-top: 0.5em;
+	padding-top: 0.5rem;
 }
 
 .top-navigation .links li {
 	display: inline-block;
 	float: left;
-	margin-right: 1em;
+	margin-right: 1rem;
 }
 
-.top-navigation .links .active {
+.top-navigation .links li a:active, .top-navigation .links li a:visited {
     color: #4c5058;
     font-weight: 500;
+    text-decoration: none;
 }
 
-.top-navigation .links li:hover {
+.top-navigation .links li a:hover {
 	color: #333;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .top-navigation .logo {
-	padding-top: 0.5em;
+	padding-top: 1rem;
 }
 
 /*Header Styles*/
@@ -112,5 +110,35 @@ div {
 	text-align: center;
 }
 
+.big-button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+    width: auto;
+    background-color: #FF9900;
+    font-size: 1.3rem;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.big-button:hover {
+	background-color: #E68A00;
+}
+
 /*Body Styles*/
+
+.cases .devices {
+    width: 33.3333333%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;
+}
+
 /*Footer Styles*/
