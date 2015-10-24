@@ -8,12 +8,12 @@ html {
 }
 
 body {
-    background-color: LightGray;
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #838994;
 	letter-spacing: 0.03rem;
-
+	margin: 0;
 }
 
 h1 {
@@ -37,11 +37,15 @@ h3 {
 }
 
 div {
-    border: 1px solid Chocolate;
 }
 
 a {
 	text-decoration: none;
+}
+
+hr {
+	margin-top: 9rem;
+	margin-bottom: 4rem;
 }
 
 .content {
@@ -55,6 +59,7 @@ a {
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
+	top: 0;
 }
 
 .top-navigation .content {
@@ -132,13 +137,49 @@ a {
 
 /*Body Styles*/
 
+.cases .content h2 {
+	margin-top: 5rem;
+	margin-bottom: 4rem;
+}
+
 .cases .devices {
-    width: 33.3333333%;
-    display: inline-block;
-    /* styles to assist with debugging */
-    border: 1px solid black;
     box-sizing: border-box;
     height: 4em;
+    text-align: center;
+}
+
+.cases .content li {
+	width: 33.3333333%;
+	display: inline-block;
+	float: left;
 }
 
 /*Footer Styles*/
+
+footer .content {
+	text-align: center;
+}
+
+.social .content .icons {
+	display: block;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.social .content .icons li {
+	display: inline-block;
+	border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+
+.social .copy {
+	display: block;
+	width: 100%;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
